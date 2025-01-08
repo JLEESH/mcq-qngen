@@ -30,3 +30,6 @@ e.g. ``echo "OPEN_AI_KEY=<your-key-here>" > .env``
 ``python qngen.py`` - Obtains and generates response files in the same directory.
 
 ``python qngen.py -d`` - Allow ``questions.json`` to be overwritten (so you can run ``qngen.py`` and ``mcq.py`` back-to-back without renaming files).
+
+# Website (WIP)
+roundgoesround dot xyz slash mcq-qn
