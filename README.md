@@ -8,7 +8,7 @@ Question generation for learning.
 
 ``mcq.py`` - Go through generated questions.
 
-Use ``files/questions.json``, ``files/qn-re-1401.json`` or output from ``qngen.py``.
+Use ``questions.json``, files under ``files/`` or output from ``qngen.py``.
 
 ## qngen.py:
 
@@ -29,4 +29,4 @@ e.g. ``echo "OPEN_AI_KEY=<your-key-here>" > .env``
 ## qngen.py: 
 ``python qngen.py`` - Obtains and generates response files in the same directory.
 
-Note: some minimal changes to the response file may be necessary.
+``python qngen.py -d`` - Allow ``questions.json`` to be overwritten (so you can run ``qngen.py`` and ``mcq.py`` back-to-back without renaming files).

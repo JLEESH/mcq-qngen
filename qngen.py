@@ -2,6 +2,8 @@ from openai import OpenAI
 
 oa_key = None # replace with caution
 
+PROTECT_QN_FILE = True
+
 # edit prompt as needed.
 QNGEN_SYSTEM_PROMPT = """
     You are a tool to create high-quality JSON files for quizzes e.g. a vocabulary quiz.
@@ -24,6 +26,7 @@ QNGEN_SYSTEM_PROMPT = """
     - Use a mix of questions of simple and intermediate difficulty e.g. vocabulary of different levels.
     - Provide plausible distractors for all answer options.
     - Ensure high-quality, educationally sound options.
+    - Ensure an even mixture of the indices of correct answers.
 
     Example Question for a Vienamese vocabulary quiz:
     {
@@ -40,11 +43,12 @@ QNGEN_SYSTEM_PROMPT = """
     "        "Generate output as a valid JSON structure."
 """
 # edit prompt to change number of questions etc.
-QNGEN_USER_PROMPT = "10 question of Vietnamese. \
+nQuestions = 10
+QNGEN_USER_PROMPT = f"{nQuestions} question of Vietnamese. \
     Easy native Vietnamese words and intermediate to advanced \
     Sino-Vietnamese words for learners with a background in both English, Chinese and Japanese."
 
-def generate_response(oa_key=oa_key):
+def generate_response(system_text, user_text, oa_key=oa_key):
     if oa_key == None:
         raise ValueError("OpenAI API key is not set.")
     
@@ -83,6 +87,32 @@ def generate_response(oa_key=oa_key):
     )
 
     return response
+
+def save_questions(response, id=None, filename=None):
+    if filename == None:
+        if id == None:
+            import uuid
+            filename = f"questions_{uuid.uuid4()}.json"
+        else:
+            filename = f"questions_{id}.json"
+    
+    filecontent = response.choices[0].message.content[8:-3]
+
+    with open(filename, "w") as f:
+        f.write(filecontent)
+
+    # save questions to a set file as well
+    # check if file already exists
+    import os
+    if os.path.exists("questions.json") and PROTECT_QN_FILE == True:
+        # raise FileExistsError("WARNING: -d was not passed (questions.json is protected) \
+        #     and ``questions.json`` already exists. \
+        #     Please move or delete the file.\n\
+        #     Continuing without overwriting... (``questions_<UUID>.json`` is still saved.)"
+        print("WARNING: -d was not passed (questions.json is protected) and ``questions.json`` already exists.\nPlease move or delete the file.\nContinuing without overwriting... (``questions_<UUID>.json`` is still saved.)")
+
+        with open("questions.json", "w") as f:
+            f.write(filecontent)
 
 def save_response_text(response, id=None, filename=None):
     if filename == None:
@@ -130,9 +160,27 @@ def save_response_content_text(response, id=None, filename=None):
         f.write(response.choices[0].message.content)
 
 def generate_questions(oa_key=oa_key):
-    return generate_response(oa_key=oa_key)
+    return generate_response(QNGEN_SYSTEM_PROMPT, QNGEN_USER_PROMPT, oa_key=oa_key)
 
 def main():
+    # process args
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--do-not-protect-qn-file", "-d",
+                       dest="DNP",
+                       action="store_true",
+                       default=False,
+                       help="Allow ``questions.json`` to be overwritten.")
+    parser.add_argument("--generated-response-save", "-g",
+                       dest="GEN_RES_SAVE",
+                       action="store_true",
+                       default=False,
+                       help="Save generated responses.")
+    args = parser.parse_args()
+    global PROTECT_QN_FILE
+    PROTECT_QN_FILE = args.DNP == False
+    M_GEN_RES_SAVE = args.GEN_RES_SAVE
+    
     # load .env file to obtain OpenAI API key
     import os
     from dotenv import load_dotenv
@@ -153,9 +201,14 @@ def main():
     filename_var = f"response_{file_uuid}.txt"
     filename_text = f"response_text_{file_uuid}.txt"
     filename_content_text = f"response_content_text_{file_uuid}.txt"
-    save_response_var(response, id=file_uuid)
-    save_response_text(response, id=file_uuid)
-    save_response_content_text(response, id=file_uuid)
+
+    if M_GEN_RES_SAVE:
+        save_response_var(response, id=file_uuid)
+        save_response_text(response, id=file_uuid)
+        save_response_content_text(response, id=file_uuid)
+
+    # save questions to file
+    save_questions(response, id=file_uuid)
     
     return response
 

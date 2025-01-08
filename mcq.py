@@ -2,6 +2,9 @@ import os
 import sys
 import argparse
 
+DEFAULT_FLENAME = 'questions.json'
+TRACK_SCORE = True
+
 format2qn = {
                 "simple": lambda x: f"What is the meaning of {x}?",
                 "synonym" : lambda x: f"What is a synonym for {x}?",
@@ -37,8 +40,6 @@ def read_question(file, filetype='json'):
     return data
 
 def main():
-    DEFAULT_FLENAME = 'files/questions.json'
-    
     # parse arguments
     parser = argparse.ArgumentParser()
     parser.add_argument('--filename', '-f', type=str, default=DEFAULT_FLENAME, help='Filename of the question file.')
@@ -54,10 +55,14 @@ def main():
         sys.exit(0)
 
     # decide whether to track score
+    global TRACK_SCORE
     TRACK_SCORE = args.no_score_track == False
 
     # set up the quiz
     filename = args.filename
+    if not os.path.exists(filename):
+        raise FileNotFoundError(f"File ``{filename}`` not found.")
+    
     data = read_question(filename)
     score = 0
 

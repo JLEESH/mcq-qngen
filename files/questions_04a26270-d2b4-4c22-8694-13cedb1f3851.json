@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1c8b2624-9630-4c30-b7c4-17f2a0d34c95",
+        "_comments": ["internal-index: 0"],
+        "question-type": "simple",
+        "question": ["nhà"],
+        "options": ["House", "Tree", "Car", "Book"],
+        "options-alt-list": [["Nhà", "Cây", "Xe", "Sách"],
+                                ["家", "木", "車", "本"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "d15b63b9-78b2-4f7b-a8b5-de5d0a4bb3c4",
+        "_comments": ["internal-index: 1"],
+        "question-type": "simple",
+        "question": ["bánh"],
+        "options": ["Cake", "Bread", "Fruit", "Vegetable"],
+        "options-alt-list": [["Bánh", "Bánh mì", "Trái cây", "Rau"],
+                                ["ケーキ", "パン", "果物", "野菜"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "e3f0266b-43f3-4d7e-bb36-379fdba56d3d",
+        "_comments": ["internal-index: 2"],
+        "question-type": "simple",
+        "question": ["cá"],
+        "options": ["Fish", "Meat", "Bread", "Egg"],
+        "options-alt-list": [["Cá", "Thịt", "Bánh", "Trứng"],
+                                ["魚", "肉", "パン", "卵"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "09bcde85-4972-4334-8f35-f6aba66bdcbc",
+        "_comments": ["internal-index: 3"],
+        "question-type": "simple",
+        "question": ["học"],
+        "options": ["Study", "Play", "Rest", "Eat"],
+        "options-alt-list": [["Học", "Chơi", "Nghỉ", "Ăn"],
+                                ["勉強する", "遊ぶ", "休む", "食べる"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "c1c3b846-3fd0-44eb-8dab-b8eda9774386",
+        "_comments": ["internal-index: 4"],
+        "question-type": "simple",
+        "question": ["thế giới"],
+        "options": ["World", "Country", "City", "Village"],
+        "options-alt-list": [["Thế giới", "Quốc gia", "Thành phố", "Làng"],
+                                ["世界", "国", "都市", "村"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "4f61468e-bf48-492e-8a47-ba1bdb4620e5",
+        "_comments": ["internal-index: 5"],
+        "question-type": "simple",
+        "question": ["nhân dân"],
+        "options": ["People", "Government", "Economy", "History"],
+        "options-alt-list": [["Nhân dân", "Chính phủ", "Kinh tế", "Lịch sử"],
+                                ["人民", "政府", "経済", "歴史"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "66eec64f-75ab-44cf-b8fe-c4e6be55a7ff",
+        "_comments": ["internal-index: 6"],
+        "question-type": "simple",
+        "question": ["tự do"],
+        "options": ["Freedom", "Power", "Responsibility", "Justice"],
+        "options-alt-list": [["Tự do", "Quyền lực", "Trách nhiệm", "Công lý"],
+                                ["自由", "権力", "責任", "正義"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "519c0b93-2b8e-4838-81c1-d2d6ec1c2ead",
+        "_comments": ["internal-index: 7"],
+        "question-type": "simple",
+        "question": ["giáo dục"],
+        "options": ["Education", "Health", "Culture", "Science"],
+        "options-alt-list": [["Giáo dục", "Y tế", "Văn hóa", "Khoa học"],
+                                ["教育", "健康", "文化", "科学"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "90ef459c-daba-4f02-b57b-fb024417bf1f",
+        "_comments": ["internal-index: 8"],
+        "question-type": "simple",
+        "question": ["sự nghiệp"],
+        "options": ["Career", "Job", "Hobby", "Skill"],
+        "options-alt-list": [["Sự nghiệp", "Công việc", "Sở thích", "Kỹ năng"],
+                                ["キャリア", "仕事", "趣味", "スキル"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "d4373e83-16bb-4e38-a632-c693b5b55cd5",
+        "_comments": ["internal-index: 9"],
+        "question-type": "simple",
+        "question": ["bình đẳng"],
+        "options": ["Equality", "Justice", "Liberty", "Humanity"],
+        "options-alt-list": [["Bình đẳng", "Công lý", "Tự do", "Nhân loại"],
+                                ["平等", "正義", "自由", "人間性"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    }
+]
