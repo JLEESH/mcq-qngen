@@ -2,6 +2,7 @@ from openai import OpenAI
 
 oa_key = None # replace with caution
 
+# edit prompt as needed.
 QNGEN_SYSTEM_PROMPT = """
     You are a tool to create high-quality JSON files for quizzes e.g. a vocabulary quiz.
     Each question must adhere to the following JSON format:
@@ -38,7 +39,7 @@ QNGEN_SYSTEM_PROMPT = """
     }
     "        "Generate output as a valid JSON structure."
 """
-
+# edit prompt to change number of questions etc.
 QNGEN_USER_PROMPT = "10 question of Vietnamese. \
     Easy native Vietnamese words and intermediate to advanced \
     Sino-Vietnamese words for learners with a background in both English, Chinese and Japanese."

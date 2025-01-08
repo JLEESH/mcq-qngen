@@ -37,9 +37,11 @@ def read_question(file, filetype='json'):
     return data
 
 def main():
+    DEFAULT_FLENAME = 'files/questions.json'
+    
     # parse arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument('--filename', '-f', type=str, default='questions.json', help='Filename of the question file.')
+    parser.add_argument('--filename', '-f', type=str, default=DEFAULT_FLENAME, help='Filename of the question file.')
     parser.add_argument('--generate-uuid', '-g', action='store_true', default=False, help='Generate a UUID.') # generate uuid and exit
     parser.add_argument('--no-score-track', '-n', action='store_true', default=False, help='Turn off score tracking.')
     args = parser.parse_args()
