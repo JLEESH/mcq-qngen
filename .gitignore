@@ -1,2 +1,6 @@
 .env
+.env_test
 __pycache__/
+responses_old/
+.vscode/
+*_old

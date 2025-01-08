@@ -2,9 +2,10 @@ import os
 import sys
 import argparse
 
-format2qn = {"simple": lambda x: f"What is the meaning of {x}?",
-             "synonym" : lambda x: f"What is a synonym for {x}?",
-             "antonym" : lambda x: f"What is an antonym for {x}?"
+format2qn = {
+                "simple": lambda x: f"What is the meaning of {x}?",
+                "synonym" : lambda x: f"What is a synonym for {x}?",
+                "antonym" : lambda x: f"What is an antonym for {x}?"
             }
 
 ans2char = {0: 'A', 1: 'B', 2: 'C', 3: 'D'}
@@ -30,7 +31,6 @@ def read_question(file, filetype='json'):
     if filetype != 'json':
         raise NotImplementedError
     
-    
     with open(file, 'r') as f:
         data = json.load(f)
     
@@ -40,23 +40,26 @@ def main():
     # parse arguments
     parser = argparse.ArgumentParser()
     parser.add_argument('--filename', '-f', type=str, default='questions.json', help='Filename of the question file.')
-    parser.add_argument('--generate-uuid', '-g', action='store_true', default=False, help='Generate a UUID.')
+    parser.add_argument('--generate-uuid', '-g', action='store_true', default=False, help='Generate a UUID.') # generate uuid and exit
     parser.add_argument('--no-score-track', '-n', action='store_true', default=False, help='Turn off score tracking.')
     args = parser.parse_args()
 
     # generate UUID and exit
+    # note: quick functionality that has nothing to do with the main program
     if args.generate_uuid:
         uuid = generate_uuid()
         print(uuid)
         sys.exit(0)
+
+    # decide whether to track score
     TRACK_SCORE = args.no_score_track == False
 
-    filename = args.filename # 'questions.json'
+    # set up the quiz
+    filename = args.filename
     data = read_question(filename)
-
     score = 0
 
-    # format and print data
+    # start the quiz
     #for (qindex, question) in data.items(): # if data is a dict
     for qindex, question in enumerate(data): # if data is a list
 
@@ -79,6 +82,7 @@ def main():
             print(score_str)
         
         # process user input
+        # TODO: improve user experience... too many ENTER presses
         ans = input()
         if ans2char[question['answer']] == ans.upper():
             print("Correct!")
