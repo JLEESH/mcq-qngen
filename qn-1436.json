@@ -1,0 +1,112 @@
+[
+    {
+        "id": "b38d5f64-fd45-4c2f-9c47-27f1be86c715",
+        "_comments": ["internal-index: 0"],
+        "question-type": "simple",
+        "question": ["nhà"],
+        "options": ["House", "Tree", "Car", "Dog"],
+        "options-alt-list": [["Nhà", "Cây", "Xe", "Chó"],
+                                ["家", "木", "車", "犬"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "03d9f5e2-432e-4b79-8b5c-a0c7e56e4c2a",
+        "_comments": ["internal-index: 1"],
+        "question-type": "simple",
+        "question": ["cá"],
+        "options": ["Fish", "Meat", "Vegetable", "Fruit"],
+        "options-alt-list": [["Cá", "Thịt", "Rau", "Trái cây"],
+                                ["魚", "肉", "野菜", "フルーツ"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "5e2ccf3d-9634-42f1-b987-9d8c5946e0d4",
+        "_comments": ["internal-index: 2"],
+        "question-type": "simple",
+        "question": ["mặt trời"],
+        "options": ["Moon", "Star", "Sun", "Cloud"],
+        "options-alt-list": [["Mặt trời", "Ngôi sao", "Mặt trăng", "Đám mây"],
+                                ["太陽", "星", "月", "雲"]],
+        "answer": 2,
+        "answer-alt": [2, 2]
+    },
+    {
+        "id": "17a045c6-098d-474f-bb78-d04cd24f1720",
+        "_comments": ["internal-index: 3"],
+        "question-type": "simple",
+        "question": ["trường học"],
+        "options": ["Office", "Hospital", "School", "Market"],
+        "options-alt-list": [["Văn phòng", "Bệnh viện", "Trường học", "Chợ"],
+                                ["オフィス", "病院", "学校", "市場"]],
+        "answer": 2,
+        "answer-alt": [2, 2]
+    },
+    {
+        "id": "a62075db-4d34-497b-a8b8-990f29d8d26f",
+        "_comments": ["internal-index: 4"],
+        "question-type": "simple",
+        "question": ["khí"],
+        "options": ["Gas", "Water", "Solid", "Liquid"],
+        "options-alt-list": [["Gas", "Nước", "Rắn", "Lỏng"],
+                                ["気体", "水", "固体", "液体"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "24214eed-9c71-427d-8507-ef480eea4743",
+        "_comments": ["internal-index: 5"],
+        "question-type": "simple",
+        "question": ["thương mại"],
+        "options": ["Trade", "Agriculture", "Industry", "Service"],
+        "options-alt-list": [["Thương mại", "Nông nghiệp", "Công nghiệp", "Dịch vụ"],
+                                ["商業", "農業", "工業", "サービス"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "57e482ff-7de6-45f0-b93b-891f400686df",
+        "_comments": ["internal-index: 6"],
+        "question-type": "simple",
+        "question": ["văn hóa"],
+        "options": ["Culture", "Art", "Science", "History"],
+        "options-alt-list": [["Văn hóa", "Nghệ thuật", "Khoa học", "Lịch sử"],
+                                ["文化", "芸術", "科学", "歴史"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "4b9c54fc-21d0-4a34-b992-239fd89b4039",
+        "_comments": ["internal-index: 7"],
+        "question-type": "simple",
+        "question": ["bệnh viện"],
+        "options": ["Hospital", "Clinic", "Pharmacy", "Laboratory"],
+        "options-alt-list": [["Bệnh viện", "Phòng khám", "Hiệu thuốc", "Phòng thí nghiệm"],
+                                ["病院", "クリニック", "薬局", "研究所"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "ccc27976-9001-431d-a0b7-ce144f8fc684",
+        "_comments": ["internal-index: 8"],
+        "question-type": "simple",
+        "question": ["khoa học"],
+        "options": ["Science", "Mathematics", "Literature", "Philosophy"],
+        "options-alt-list": [["Khoa học", "Toán học", "Văn học", "Triết học"],
+                                ["科学", "数学", "文学", "哲学"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "f5b41e8d-d968-4a6d-8bcd-5894b7b04e78",
+        "_comments": ["internal-index: 9"],
+        "question-type": "simple",
+        "question": ["đầu tư"],
+        "options": ["Investment", "Expense", "Profit", "Cost"],
+        "options-alt-list": [["Đầu tư", "Chi phí", "Lợi nhuận", "Chi phí"],
+                                ["投資", "費用", "利益", "コスト"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    }
+]

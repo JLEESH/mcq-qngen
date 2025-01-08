@@ -1,0 +1,167 @@
+[
+    {
+        "id": "f1fdcdd1-e0e9-4b4e-b64c-35e6b02fb911",
+        "_comments": ["index-in-file: 0"],
+        "question-type": "simple",
+        "question": ["Mẹ"],
+        "options": ["Father", "Mother", "Sister", "Brother"],
+        "options-alt-list": [["Bố", "Mẹ", "Chị", "Anh"],
+                              ["父", "母", "姉", "兄"]],
+        "answer": 1,
+        "answer-alt": [1, 1]
+    },
+    {
+        "id": "37ecd07a-51c6-414d-8e36-9adf8b56f30f",
+        "_comments": ["index-in-file: 1"],
+        "question-type": "simple",
+        "question": ["Học"],
+        "options": ["Learn", "Play", "Teach", "Read"],
+        "options-alt-list": [["Học", "Chơi", "Dạy", "Đọc"],
+                              ["学ぶ", "遊ぶ", "教える", "読む"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "7ff08568-c6d5-4822-a231-cbe7c6f67819",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Nước"],
+        "options": ["Water", "Fire", "Earth", "Air"],
+        "options-alt-list": [["Nước", "Lửa", "Đất", "Không khí"],
+                              ["水", "火", "土", "空気"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "1bd819d0-5aec-4159-bb46-d801ef9741ed",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Thời tiết"],
+        "options": ["Weather", "Climate", "Sky", "Wind"],
+        "options-alt-list": [["Thời tiết", "Khí hậu", "Trời", "Gió"],
+                              ["天候", "気候", "空", "風"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "49825584-5eaa-442f-b646-5fbda3fc0c28",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Hạnh phúc"],
+        "options": ["Sadness", "Joy", "Happiness", "Fear"],
+        "options-alt-list": [["Buồn", "Vui", "Hạnh phúc", "Sợ hãi"],
+                              ["悲しみ", "喜び", "幸福", "恐れ"]],
+        "answer": 2,
+        "answer-alt": [2, 2]
+    },
+    {
+        "id": "9805aeb8-e13a-44fa-97d4-b7aaa8073f5d",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Giáo dục"],
+        "options": ["Education", "Health", "Economy", "Politics"],
+        "options-alt-list": [["Giáo dục", "Sức khỏe", "Kinh tế", "Chính trị"],
+                              ["教育", "健康", "経済", "政治"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "e44c0a1d-9e22-494f-81b5-2287772cb5cb",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Thành phố"],
+        "options": ["Village", "Town", "Capital", "City"],
+        "options-alt-list": [["Làng", "Thị trấn", "Thủ đô", "Thành phố"],
+                              ["村", "町", "首都", "都市"]],
+        "answer": 3,
+        "answer-alt": [3, 3]
+    },
+    {
+        "id": "f03048e5-6436-4af7-b3f8-2de165eaf82f",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Công nghệ"],
+        "options": ["Technology", "Science", "Art", "Literature"],
+        "options-alt-list": [["Công nghệ", "Khoa học", "Nghệ thuật", "Văn học"],
+                              ["テクノロジー", "科学", "芸術", "文学"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "cd5328b6-09f8-402b-a24e-67fa84f8b424",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Khó khăn"],
+        "options": ["Ease", "Difficulty", "Simplicity", "Challenge"],
+        "options-alt-list": [["Dễ dàng", "Khó khăn", "Sự đơn giản", "Thử thách"],
+                              ["易しい", "難しい", "シンプルさ", "挑戦"]],
+        "answer": 1,
+        "answer-alt": [1, 1]
+    },
+    {
+        "id": "177ada87-092c-4578-8f93-01e69186ce8e",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Thăng trầm"],
+        "options": ["Rise and Fall", "Success", "Stability", "Change"],
+        "options-alt-list": [["Thăng trầm", "Thành công", "Ổn định", "Thay đổi"],
+                              ["盛衰", "成功", "安定", "変動"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "dc18c92a-5f4e-4c66-9304-0a69eb9e8c12",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Văn hóa"],
+        "options": ["Culture", "Nature", "Economy", "Society"],
+        "options-alt-list": [["Văn hóa", "Thiên nhiên", "Kinh tế", "Xã hội"],
+                              ["文化", "自然", "経済", "社会"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "158f8bff-fc85-4c5d-8016-c0a0978de88f",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Tri thức"],
+        "options": ["Knowledge", "Intelligence", "Wisdom", "Understanding"],
+        "options-alt-list": [["Kiến thức", "Thông minh", "Trí tuệ", "Hiểu biết"],
+                              ["知識", "知性", "智慧", "理解"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "3ff25e47-57ac-4aad-885d-fbf6eb92046f",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Nghệ thuật"],
+        "options": ["Art", "Craft", "Technology", "Sports"],
+        "options-alt-list": [["Nghệ thuật", "Thủ công", "Công nghệ", "Thể thao"],
+                              ["アート", "工芸", "テクノロジー", "スポーツ"]],
+        "answer": 0,
+        "answer-alt": [0, 0]
+    },
+    {
+        "id": "c45c6845-2080-4c9d-bbc8-859c47a69c1f",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Chiến tranh"],
+        "options": ["Peace", "War", "Conflict", "Treaty"],
+        "options-alt-list": [["Hòa bình", "Chiến tranh", "Xung đột", "Hiệp ước"],
+                              ["平和", "戦争", "対立", "条約"]],
+        "answer": 1,
+        "answer-alt": [1, 1]
+    },
+    {
+        "id": "5c659008-c5be-4e09-8e97-9d9c21e0d593",
+        "_comments": [""],
+        "question-type": "simple",
+        "question": ["Phát triển"],
+        "options": ["Derivation", "Sustainability", "Growth", "Decay"],
+        "options-alt-list": [["Sự phát triển", "Sự bền vững", "Tăng trưởng", "Suy thoái"],
+                              ["発展", "持続可能性", "成長", "衰退"]],
+        "answer": 2,
+        "answer-alt": [2, 2]
+    }
+]

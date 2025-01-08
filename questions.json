@@ -1,0 +1,39 @@
+{
+    "0" : {
+        "_comments" : ["\"id\" : 0,", "TODO: UUID", "// \"question-image\" : \"https://www.google.com.vn/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png\""],
+        "question-type" : "simple",
+        "question" : ["chó"],
+        "options" : ["Cat", "Dog", "Bird", "Fish"],
+        "options-alt-list" : [["Mèo", "Chó", "Chim", "Cá"], ["猫", "犬", "鳥", "魚"]],
+        "answer" : 1,
+        "answer-alt" : [1, 1]
+    },
+    "1" : {
+        "_comments" : ["\"id\" : 1,"],
+        "question-type" : "simple",
+        "question" : ["thành công"],
+        "options" : ["Success", "Failure", "Error", "Warning"],
+        "options-alt-list" : [["Thành công", "Thất bại", "Lỗi", "Cảnh báo"], ["成功", "失敗", "エラー", "警告"]],
+        "answer" : 0,
+        "answer-alt" : [0, 0]
+    },
+    "2" : {
+        "_comments" : ["\"id\" : 2,"],
+        "question-type" : "simple",
+        "question" : ["thị trường"],
+        "options" : ["Market", "Supermarket", "Store", "Shop"],
+        "options-alt-list" : [["Thị trường", "Siêu thị", "Cửa hàng", "Shop"], ["市場", "スーパーマーケット", "店", "ショップ"]],
+        "answer" : 0,
+        "answer-alt" : [0, 0]
+    },
+    "3" : {
+        "_comments" : ["\"id\" : 3,"],
+        "question-type" : "simple",
+        "question" : ["bán hàng"],
+        "options" : ["Sell", "Buy", "Trade", "Exchange"],
+        "options-alt-list" : [["Bán", "Mua", "Giao dịch", "Trao đổi"], ["売る", "買う", "トレード", "交換"]],
+        "answer" : 2,
+        "answer-alt" : [2, 2]
+    }
+
+}
