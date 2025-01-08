@@ -22,9 +22,11 @@ e.g. ``echo "OPEN_AI_KEY=<your-key-here>" > .env``
 
 
 ## mcq.py:
-``python mcq.py -f files/qn-1436`` - Start a short quiz.
+``python mcq.py -f files/questions.json`` - Start a short quiz.
 
-``python mcq.py -f files/qn-1436`` - Turn off score tracking during quiz (still shows final score).
+``python mcq.py -nf files/questions.json`` - Turn off score tracking during quiz (still shows final score).
 
 ## qngen.py: 
 ``python qngen.py`` - Obtains and generates response files in the same directory.
+
+Note: some minimal changes to the response file may be necessary.
